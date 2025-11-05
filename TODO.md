@@ -1,23 +1,26 @@
-# TODO List for Mi Salle+ News Integration
+# TODO: Redesign Home Page and Create Subpages with Liquid Glass Design
 
-## 1. Supabase Client Setup
-- [x] Connect Supabase to frontend using .env variables (already done)
-- [x] Add helper functions to supabaseClient.js: getNews(), addNews(), deleteNews()
+## Completed Tasks
+- [x] Analyze existing files and create plan
+- [x] Get user confirmation for plan
+- [x] Update tailwind.config.js: Add glass-related utilities (backdrop-blur variants, glass shadows, floating keyframes)
 
-## 2. Home Page Updates
-- [x] Modify Home.jsx to load and display news dynamically using getNews()
+## Pending Tasks
+- [x] Create src/components/GlassCard.jsx: Reusable glass card component
+- [x] Create src/components/PreviewSection.jsx: Reusable preview section component
+- [x] Redesign src/pages/Home.jsx: Hero with background image, "Quiénes Somos" section, preview cards for new sections
+- [x] Create src/pages/News.jsx: Full Supabase news list page
+- [x] Create src/pages/Staff.jsx: Static team info page
+- [x] Create src/pages/Admission2026.jsx: Info + form page
+- [x] Create src/pages/Regulations.jsx: PDF/text embed page
+- [x] Update src/App.jsx: Separate routes for subpages
+- [x] Update src/components/Header.jsx: Change navigation to Link components
+- [x] Add subtle parallax/floating animations for glass effect
+- [x] Ensure WCAG contrast, responsiveness, image optimization
 
-## 3. Admin Panel Creation
-- [x] Create Admin.jsx page with form to add news and list with delete buttons
-- [x] Implement basic password protection with prompt and localStorage
-- [x] Use Tailwind for clean, minimal design consistent with site theme
-- [x] Add responsive design and loading indicators
-
-## 4. Routing Updates
-- [x] Update App.jsx to use React Router and include /admin route
-
-## 5. Error Handling
-- [x] Ensure all API calls log errors to console
-
-## 6. Deployment
-- [ ] Commit and push changes to GitHub for Vercel redeployment
+## Followup Steps
+- [ ] Test routing and navigation
+- [ ] Verify Supabase integration for News page
+- [ ] Check responsiveness, accessibility, contrast compliance
+- [ ] Optimize images with lazy loading
+- [ ] Commit changes and deploy to Vercel

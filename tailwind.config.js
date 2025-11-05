@@ -24,6 +24,8 @@ export default {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-in-out',
         'float': 'float 3s ease-in-out infinite',
+        'float-slow': 'float 6s ease-in-out infinite',
+        'glass-float': 'glassFloat 4s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -38,6 +40,19 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
         },
+        glassFloat: {
+          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+          '25%': { transform: 'translateY(-5px) rotate(0.5deg)' },
+          '50%': { transform: 'translateY(-10px) rotate(0deg)' },
+          '75%': { transform: 'translateY(-5px) rotate(-0.5deg)' },
+        },
+      },
+      backdropBlur: {
+        'xs': '2px',
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        'glass-subtle': '0 4px 16px 0 rgba(31, 38, 135, 0.2)',
       },
     },
   },

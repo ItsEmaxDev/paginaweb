@@ -23,17 +23,23 @@ const Header = () => {
           />
         </motion.a>
         <nav className="hidden md:flex space-x-8">
-          {['Inicio', 'Calendario', 'Logros', 'Talleres', 'Contacto'].map((item, index) => (
+          {[
+            { label: 'Inicio', path: '/' },
+            { label: 'Calendario', path: '/calendario' },
+            { label: 'Logros', path: '/logros' },
+            { label: 'Talleres', path: '/talleres' },
+            { label: 'Contacto', path: '/contacto' }
+          ].map((item, index) => (
             <motion.a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.path}
               className="text-pure-white hover:text-golden-yellow transition-all duration-300 font-medium"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              {item}
+              {item.label}
             </motion.a>
           ))}
         </nav>

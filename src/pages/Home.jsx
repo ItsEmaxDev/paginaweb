@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { getNews } from "../services/supabaseClient";
 
 const Home = () => {
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadNews = async () => {
+      try {
+        const newsData = await getNews();
+        setNews(newsData);
+      } catch (error) {
+        console.error('Error loading news:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadNews();
+  }, []);
+
   return (
     <section
       id="inicio"
@@ -77,53 +96,103 @@ const Home = () => {
           </motion.div>
 
           {/* Noticias */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "📚",
-                title: "Nueva Biblioteca Digital",
-                text: "Hemos inaugurado nuestra nueva biblioteca digital con acceso a miles de recursos educativos.",
-                date: "Publicado: 15 Oct 2024",
-              },
-              {
-                icon: "⚽",
-                title: "Campeonato de Fútbol",
-                text: "Nuestros estudiantes se preparan para el campeonato regional de fútbol escolar.",
-                date: "Publicado: 12 Oct 2024",
-              },
-              {
-                icon: "💻",
-                title: "Taller de Programación",
-                text: "Nuevo taller de introducción a la programación para estudiantes de secundaria.",
-                date: "Publicado: 10 Oct 2024",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                whileHover={{
-                  y: -10,
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
-                }}
-                className="bg-pure-white rounded-lg shadow-lg overflow-hidden border border-gray-100"
-              >
-                <div className="h-48 bg-gradient-diagonal flex items-center justify-center">
-                  <span className="text-pure-white text-6xl">{item.icon}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-mint-green mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{item.text}</p>
-                  <span className="text-sm text-soft-cyan font-medium">
-                    {item.date}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          {loading ? (
+            <div className="text-center py-8">
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+              <p className="mt-2 text-gray-600">Cargando noticias...</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {news.length > 0 ? news.slice(0, 6).map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 * index }}
+                  whileHover={{
+                    y: -10,
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+                  }}
+                  className="bg-pure-white rounded-lg shadow-lg overflow-hidden border border-gray-100"
+                >
+                  <div className="h-48 bg-gradient-diagonal flex items-center justify-center">
+                    {item.image_url ? (
+                      <img
+                        src={item.image_url}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'block';
+                        }}
+                      />
+                    ) : null}
+                    <span className={`text-pure-white text-6xl ${item.image_url ? 'hidden' : ''}`}>📰</span>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-mint-green mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{item.content}</p>
+                    <span className="text-sm text-soft-cyan font-medium">
+                      {new Date(item.date).toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </span>
+                  </div>
+                </motion.div>
+              )) : (
+                // Fallback static news if no dynamic news
+                [
+                  {
+                    icon: "📚",
+                    title: "Nueva Biblioteca Digital",
+                    text: "Hemos inaugurado nuestra nueva biblioteca digital con acceso a miles de recursos educativos.",
+                    date: "Publicado: 15 Oct 2024",
+                  },
+                  {
+                    icon: "⚽",
+                    title: "Campeonato de Fútbol",
+                    text: "Nuestros estudiantes se preparan para el campeonato regional de fútbol escolar.",
+                    date: "Publicado: 12 Oct 2024",
+                  },
+                  {
+                    icon: "💻",
+                    title: "Taller de Programación",
+                    text: "Nuevo taller de introducción a la programación para estudiantes de secundaria.",
+                    date: "Publicado: 10 Oct 2024",
+                  },
+                ].map((item, index) => (
+                  <motion.div
+                    key={`fallback-${index}`}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 * index }}
+                    whileHover={{
+                      y: -10,
+                      boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+                    }}
+                    className="bg-pure-white rounded-lg shadow-lg overflow-hidden border border-gray-100"
+                  >
+                    <div className="h-48 bg-gradient-diagonal flex items-center justify-center">
+                      <span className="text-pure-white text-6xl">{item.icon}</span>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold text-mint-green mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4">{item.text}</p>
+                      <span className="text-sm text-soft-cyan font-medium">
+                        {item.date}
+                      </span>
+                    </div>
+                  </motion.div>
+                ))
+              )}
+            </div>
+          )}
 
           {/* Eventos destacados */}
           <motion.div

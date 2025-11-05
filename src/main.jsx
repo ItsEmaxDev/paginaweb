@@ -8,3 +8,12 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+import { supabase } from './services/supabaseClient';
+
+async function testConnection() {
+  const { data, error } = await supabase.from('news').select('*').limit(1);
+  if (error) console.error("❌ Error al conectar con Supabase:", error.message);
+  else console.log("✅ Conexión a Supabase exitosa:", data);
+}
+
+testConnection();

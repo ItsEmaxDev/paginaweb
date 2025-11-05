@@ -25,8 +25,7 @@ Portal informativo moderno para el Liceo Salle, construido con React, Vite y Tai
 - **Node.js**: Entorno de ejecución JavaScript
 - **Express.js**: Framework web para Node.js
 
-### Base de Datos (Preparado)
-- **Firebase**: Plataforma de desarrollo de Google
+### Base de Datos 
 - **Supabase**: Alternativa open-source a Firebase
 
 ##  Estructura del Proyecto
@@ -103,10 +102,10 @@ Los colores principales están definidos en `tailwind.config.js`:
 
 ##  Funcionalidades Futuras
 
-- [ ] Integración con base de datos (Firebase/Supabase)
+- [ ] Integración con base de datos (Supabase)
 - [ ] Sistema de autenticación
 - [ ] Panel administrativo
-- [ ] Chatbot funcional (SalleBot)
+- [ ] Chatbot funcional (SalleBot) (aun no completado)
 - [ ] Notificaciones push
 - [ ] Sistema de reservas para talleres
 - [ ] Galería de imágenes dinámica

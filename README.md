@@ -2,7 +2,7 @@
 
 Portal informativo moderno para el Liceo Salle, construido con React, Vite y Tailwind CSS.
 
-## 🚀 Características
+##  Características
 
 - **Diseño Responsivo**: Optimizado para dispositivos móviles y desktop
 - **Interfaz Moderna**: Utilizando Tailwind CSS para un diseño limpio y profesional
@@ -13,7 +13,7 @@ Portal informativo moderno para el Liceo Salle, construido con React, Vite y Tai
   - Talleres: Información de actividades extracurriculares
   - Contacto: Formulario y chatbot placeholder
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 ### Frontend
 - **React 19**: Framework de JavaScript para interfaces de usuario
@@ -29,7 +29,7 @@ Portal informativo moderno para el Liceo Salle, construido con React, Vite y Tai
 - **Firebase**: Plataforma de desarrollo de Google
 - **Supabase**: Alternativa open-source a Firebase
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 /src
@@ -90,7 +90,7 @@ npm start
 
 El servidor se ejecutará en `http://localhost:3001`
 
-## 🎨 Personalización
+##  Personalización
 
 ### Colores
 Los colores principales están definidos en `tailwind.config.js`:
@@ -101,7 +101,7 @@ Los colores principales están definidos en `tailwind.config.js`:
 ### Tipografía
 - **Familia**: Poppins, Inter, sans-serif
 
-## 🔮 Funcionalidades Futuras
+##  Funcionalidades Futuras
 
 - [ ] Integración con base de datos (Firebase/Supabase)
 - [ ] Sistema de autenticación
@@ -112,7 +112,7 @@ Los colores principales están definidos en `tailwind.config.js`:
 - [ ] Galería de imágenes dinámica
 - [ ] API REST completa
 
-## 📝 Scripts Disponibles
+##  Scripts Disponibles
 
 - `npm run dev`: Inicia el servidor de desarrollo de Vite
 - `npm run build`: Construye la aplicación para producción
@@ -120,7 +120,7 @@ Los colores principales están definidos en `tailwind.config.js`:
 - `npm run server`: Inicia el servidor backend
 - `npm start`: Construye y ejecuta la aplicación completa
 
-## 🤝 Contribución
+##  Contribución
 
 1. Fork el proyecto
 2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -128,14 +128,14 @@ Los colores principales están definidos en `tailwind.config.js`:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## 📞 Contacto
+##  Contacto
 
-Liceo Salle - info@liceosalle.cl
+Liceo Salle - compuioelijo@gmail.com
 
 ---
 
-**Desarrollado con ❤️ para la comunidad del Liceo Salle**
+**Desarrollado exclusivamente para el Liceo TP Juan Bautista de la salle**

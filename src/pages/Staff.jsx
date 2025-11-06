@@ -8,7 +8,7 @@ const Staff = () => {
       title: "Directiva",
       icon: "👔",
       members: [
-        { name: "Eric Cabrera", position: "Director", email: "direccion@liceosalle.cl" }
+        { name: "null", position: "Director", email: "direccion@liceosalle.cl" }
       ]
     },
     {
@@ -21,7 +21,7 @@ const Staff = () => {
         { name: "Daniel Michea", position: "Profesor de Lenguaje" },
         { name: "Sergio Bernal", position: "Profesor de Educación Física" },
         { name: "Julian Salas", position: "Profesor de Educación Física" },
-        { name: "Raúl", position: "Profesor de Matemáticas" },
+        { name: "Raúl Vera", position: "Profesor de Matemáticas" },
         { name: "Cindy Lopez", position: "Profesora de Especialidad Administración" },
         { name: "Christian Labra", position: "Profesor de Especialidad Administración" }
       ]
@@ -30,7 +30,7 @@ const Staff = () => {
       title: "Inspectoría",
       icon: "🛡️",
       members: [
-        { name: "María Teresa", position: "Inspectora General" }
+        { name: "null", position: "Inspectora General" }
       ]
     }
   ];

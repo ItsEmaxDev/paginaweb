@@ -89,34 +89,34 @@ const Achievements = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16 bg-gradient-diagonal rounded-lg shadow-lg p-8 text-pure-white"
         >
-          <h3 className="text-3xl font-semibold text-center mb-8 text-golden-yellow">Estadísticas del Año</h3>
+          <h3 className="text-3xl font-semibold text-center mb-8 text-white">Estadísticas del Año</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-golden-yellow mb-2">15</div>
+              <div className="text-3xl font-bold text-white mb-2">15</div>
               <div className="text-pure-white/90">Campeonatos Ganados</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-golden-yellow mb-2">50+</div>
+              <div className="text-3xl font-bold text-white mb-2">50+</div>
               <div className="text-pure-white/90">Estudiantes Premiados</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-golden-yellow mb-2">8</div>
+              <div className="text-3xl font-bold text-white mb-2">8</div>
               <div className="text-pure-white/90">Olimpiadas Nacionales</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-golden-yellow mb-2">25</div>
+              <div className="text-3xl font-bold text-white mb-2">25</div>
               <div className="text-pure-white/90">Proyectos Destacados</div>
             </motion.div>
           </div>

@@ -48,7 +48,7 @@ const Calendar = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg"
         >
-          <h3 className="text-2xl font-semibold text-golden-yellow mb-6">Fechas Importantes 2024-2025</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">Fechas Importantes 2024-2025</h3>
           <div className="space-y-4">
             {events.map((event, index) => (
               <motion.div
@@ -69,7 +69,7 @@ const Calendar = () => {
                     <p className="text-pure-white">{event.date}</p>
                   </div>
                 </div>
-                <span className="text-sm text-golden-yellow capitalize font-medium">{event.type}</span>
+                <span className="text-sm text-white capitalize font-medium">{event.type}</span>
               </motion.div>
             ))}
           </div>

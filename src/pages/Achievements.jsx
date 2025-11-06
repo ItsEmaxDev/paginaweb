@@ -95,28 +95,28 @@ const Achievements = () => {
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-white mb-2">15</div>
+              <div className="text-3xl font-bold text-white mb-2">3</div>
               <div className="text-pure-white/90">Campeonatos Ganados</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-white mb-2">50+</div>
+              <div className="text-3xl font-bold text-white mb-2">5+</div>
               <div className="text-pure-white/90">Estudiantes Premiados</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-white mb-2">8</div>
+              <div className="text-3xl font-bold text-white mb-2">0</div>
               <div className="text-pure-white/90">Olimpiadas Nacionales</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-4"
             >
-              <div className="text-3xl font-bold text-white mb-2">25</div>
+              <div className="text-3xl font-bold text-white mb-2">2</div>
               <div className="text-pure-white/90">Proyectos Destacados</div>
             </motion.div>
           </div>

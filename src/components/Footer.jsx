@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4" style={{ color: '#f5f5f5' }}>Enlaces Rápidos</h3>
             <ul className="space-y-2 text-sm font-bold">
               <li><a href="#inicio" className="hover:text-golden-yellow transition-all duration-300 font-bold">Inicio</a></li>
-              <li><a href="#calendario" className="hover:text-golden-yellow transition-all duration-300 font-bold">Calendario</a></li>
+              <li><a href="calendario" className="hover:text-golden-yellow transition-all duration-300 font-bold">Calendario</a></li>
               <li><a href="#logros" className="hover:text-golden-yellow transition-all duration-300 font-bold">Logros</a></li>
               <li><a href="#talleres" className="hover:text-golden-yellow transition-all duration-300 font-bold">Talleres</a></li>
             </ul>

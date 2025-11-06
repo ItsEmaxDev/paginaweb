@@ -65,7 +65,7 @@ const Home = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               El Liceo TP Juan Bautista de la Salle es una institución educativa comprometida con la formación integral de nuestros estudiantes,
-              inspirados en los valores lasallanos de fe, servicio y comunidad.
+              servicio y comunidad.
             </p>
           </motion.div>
 
@@ -91,9 +91,9 @@ const Home = () => {
             >
               <GlassCard className="p-6 text-center h-full">
                 <span className="text-4xl mb-4 block">🤝</span>
-                <h3 className="text-xl font-semibold text-mint-green mb-2">Valores Lasallanos</h3>
+                <h3 className="text-xl font-semibold text-mint-green mb-2">Respeto y Integridad</h3>
                 <p className="text-gray-700">
-                  Formamos personas íntegras basadas en los principios de San Juan Bautista de la Salle.
+                  Formamos personas íntegras basadas en el respeto.
                 </p>
               </GlassCard>
             </motion.div>
@@ -122,10 +122,9 @@ const Home = () => {
         icon="📰"
         linkTo="/noticias"
         previewItems={[
-          { icon: "⚽", title: "Campeonato de Fútbol", description: "Nuestros estudiantes se preparan para el campeonato regional de fútbol escolar." },
           { icon: "💻", title: "Taller de Programación", description: "Nuevo taller de introducción a la programación para estudiantes de secundaria." },
           { icon: "🏐", title: "Nuevo Taller de Voleibol Sub14", description: "Nuevo taller de voleibol para estudiantes de sub14, fomentando el deporte y el trabajo en equipo." },
-          { icon: "🌟", title: "Curso Destacado 4to Medio D", description: "por su participación en la creación de la página web para el liceo." },
+          { icon: "🌟", title: "Curso Destacado 4to Medio D", description: "Por su participación en la creación de la página web para el liceo." },
         ]}
       />
 

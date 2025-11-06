@@ -21,28 +21,40 @@ const Staff = () => {
       icon: "👨‍🏫",
       members: [
         {
-          name: "Prof. Carlos Silva",
-          position: "Jefe de Departamento de Matemáticas",
-          description: "Especialista en matemáticas aplicadas con experiencia en enseñanza secundaria.",
-          email: "carlos.silva@liceosalle.cl"
+          name: "Prof. Guadalupe Castillo",
+          position: "Profesora de Especialidad Programación",
+          description: "por definir",
+          email: "por definir"
         },
         {
-          name: "Prof. Ana López",
-          position: "Profesora de Ciencias",
-          description: "Doctora en Biología con enfoque en educación experimental.",
-          email: "ana.lopez@liceosalle.cl"
+          name: "Prof. Juan Pablo Gonzáles",
+          position: "Profesor de Educacion Física",
+          description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
+          email: "por definir"
         },
         {
-          name: "Prof. Juan Martínez",
+          name: "Prof. Sergio Bernal",
           position: "Profesor de Educación Física",
           description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
-          email: "juan.martinez@liceosalle.cl"
+          email: "por definir"
         },
         {
-          name: "Prof. Sofia Rodríguez",
-          position: "Profesora de Música",
-          description: "Especialista en educación musical con formación en conservatorio.",
-          email: "sofia.rodriguez@liceosalle.cl"
+          name: "Prof. Julian Salas",
+          position: "Profesora de Educacion Física",
+          description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
+          email: "por definir"
+        }
+       {
+          name: "Prof. Daniel Michea ",
+          position: "Profesora de Educacion Física",
+          description: "por definir",
+          email: "por definir"
+        }
+               {
+          name: "Prof. Christian Labra",
+          position: "Profesor de Especialidad Administración",
+          description: "por definir",
+          email: "por definir"
         }
       ]
     },
@@ -150,42 +162,6 @@ const Staff = () => {
             </div>
           </motion.section>
         ))}
-
-        {/* Contact Section */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16"
-        >
-          <GlassCard className="p-8 text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-mint-green mb-4">
-              ¿Quieres formar parte de nuestro equipo?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Si eres un profesional apasionado por la educación y quieres contribuir a nuestra misión,
-              estamos siempre interesados en conocer nuevos talentos.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                href="mailto:rrhh@liceosalle.cl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-diagonal text-pure-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg text-center"
-              >
-                Envíanos tu CV
-              </motion.a>
-              <motion.a
-                href="tel:+5699975921"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-mint-green text-mint-green px-6 py-3 rounded-lg font-semibold hover:bg-mint-green hover:text-pure-white transition-all duration-300 text-center"
-              >
-                Llámanos
-              </motion.a>
-            </div>
-          </GlassCard>
-        </motion.div>
       </div>
     </div>
   );

@@ -43,19 +43,19 @@ const Staff = () => {
           position: "Profesor de Educacion Física",
           description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
           email: "por definir"
-        }
+        },
         {
           name: "Prof. Daniel Michea ",
           position: "Profesor de Lenguaje y Comunicación",
           description: "por definir",
           email: "por definir"
-        }
-               {
+        },
+        {
           name: "Prof. Christian Labra",
           position: "Profesor de Especialidad Administración",
           description: "por definir",
           email: "por definir"
-        }
+        },
       ]
     },
     {

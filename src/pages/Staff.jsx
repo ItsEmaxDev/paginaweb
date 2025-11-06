@@ -40,13 +40,13 @@ const Staff = () => {
         },
         {
           name: "Prof. Julian Salas",
-          position: "Profesora de Educacion Física",
+          position: "Profesor de Educacion Física",
           description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
           email: "por definir"
         }
-       {
+        {
           name: "Prof. Daniel Michea ",
-          position: "Profesora de Educacion Física",
+          position: "Profesor de Lenguaje y Comunicación",
           description: "por definir",
           email: "por definir"
         }

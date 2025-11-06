@@ -65,7 +65,7 @@ const Home = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               El Liceo TP Juan Bautista de la Salle es una institución educativa comprometida con la formación integral de nuestros estudiantes,
-              servicio y comunidad.
+              enfocada en promover el respeto, la integración y una sólida comunidad escolar donde todos puedan desarrollarse.
             </p>
           </motion.div>
 
@@ -91,9 +91,9 @@ const Home = () => {
             >
               <GlassCard className="p-6 text-center h-full">
                 <span className="text-4xl mb-4 block">🤝</span>
-                <h3 className="text-xl font-semibold text-mint-green mb-2">Respeto y Integridad</h3>
+                <h3 className="text-xl font-semibold text-mint-green mb-2">Respeto e Integración</h3>
                 <p className="text-gray-700">
-                  Formamos personas íntegras basadas en el respeto.
+                  Fomentamos un ambiente de respeto mutuo e integración entre estudiantes, familias y docentes.
                 </p>
               </GlassCard>
             </motion.div>

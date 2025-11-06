@@ -3,66 +3,12 @@ import { motion } from 'framer-motion';
 
 const Workshops = () => {
   const workshops = [
-    {
-      id: 1,
-      name: 'Programación y Desarrollo Web',
-      description: 'Aprende los fundamentos de la programación y crea tu primera página web.',
-      schedule: 'Lunes y Miércoles, 15:00 - 17:00',
-      instructor: 'Prof. Carlos Silva',
-      level: 'Intermedio',
-      capacity: '20 estudiantes',
-      icon: '💻'
-    },
-    {
-      id: 2,
-      name: 'Arte y Diseño Digital',
-      description: 'Explora herramientas digitales para crear arte y diseño gráfico.',
-      schedule: 'Martes y Jueves, 14:00 - 16:00',
-      instructor: 'Prof. María González',
-      level: 'Principiante',
-      capacity: '15 estudiantes',
-      icon: '🎨'
-    },
-    {
-      id: 3,
-      name: 'Ciencias Experimentales',
-      description: 'Realiza experimentos prácticos en química, física y biología.',
-      schedule: 'Viernes, 13:00 - 16:00',
-      instructor: 'Prof. Ana López',
-      level: 'Avanzado',
-      capacity: '12 estudiantes',
-      icon: '🔬'
-    },
-    {
-      id: 4,
-      name: 'Deportes: Fútbol',
-      description: 'Entrenamiento técnico y táctico para mejorar el rendimiento en fútbol.',
-      schedule: 'Lunes, Miércoles, Viernes, 16:00 - 18:00',
-      instructor: 'Prof. Juan Martínez',
-      level: 'Todos los niveles',
-      capacity: '25 estudiantes',
-      icon: '⚽'
-    },
-    {
-      id: 5,
-      name: 'Música: Coro y Ensamble',
-      description: 'Desarrolla tus habilidades vocales e instrumentales en grupo.',
-      schedule: 'Martes y Jueves, 17:00 - 19:00',
-      instructor: 'Prof. Sofia Rodríguez',
-      level: 'Principiante a Intermedio',
-      capacity: '30 estudiantes',
-      icon: '🎵'
-    },
-    {
-      id: 6,
-      name: 'Debate y Oratoria',
-      description: 'Mejora tus habilidades de comunicación y pensamiento crítico.',
-      schedule: 'Miércoles, 15:00 - 17:00',
-      instructor: 'Prof. Pedro Hernández',
-      level: 'Intermedio',
-      capacity: '18 estudiantes',
-      icon: '🎤'
-    }
+    { id: 1, name: 'Voleibol', description: 'Entrenamiento de voleibol para participantes Sub14 y otras categorías.', schedule: 'Miércoles, Viernes y Sábado', instructor: 'Prof. Sergio Bernal', level: 'Todos los niveles', capacity: 'Cupos sujetos a inscripción', icon: '🏐' },
+    { id: 2, name: 'Futsal', description: 'Entrenamientos de futsal y preparación para competencias.', schedule: 'Martes y Jueves', instructor: 'Prof. Julian Salas', level: 'Todos los niveles', capacity: 'Cupos sujetos a inscripción', icon: '⚽' },
+    { id: 3, name: 'Robótica', description: 'Explora electrónica y programación aplicada a robots.', schedule: 'Días por definir', instructor: 'Prof. Guadalupe Castillo', level: 'Intermedio', capacity: 'Cupos limitados', icon: '🤖' },
+    { id: 4, name: 'Basketball', description: 'Entrenamiento y preparación en basketball.', schedule: 'Días por definir', instructor: 'Prof. Juan González', level: 'Todos los niveles', capacity: 'Cupos sujetos a inscripción', icon: '🏀' },
+    { id: 5, name: 'Inglés', description: 'Clases de inglés para mejorar comprensión y conversación.', schedule: 'Días por definir', instructor: 'Prof. [Por definir]', level: 'Todos los niveles', capacity: 'Cupos sujetos a inscripción', icon: '🗣️' },
+    { id: 6, name: 'Música', description: 'Actividades musicales y formación instrumental/vocal.', schedule: 'Días por definir', instructor: 'Prof. [Por definir]', level: 'Todos los niveles', capacity: 'Cupos sujetos a inscripción', icon: '�' }
   ];
 
   const getLevelColor = (level) => {
@@ -147,39 +93,18 @@ const Workshops = () => {
           ))}
         </div>
 
-        {/* Información adicional */}
+        {/* Campeonatos Ganados */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16 bg-gradient-diagonal rounded-lg p-8 text-pure-white shadow-lg"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12"
         >
-          <h3 className="text-2xl font-semibold text-center mb-6 text-golden-">Información Importante</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-6"
-            >
-              <h4 className="text-lg font-semibold text-soft-white mb-4">Proceso de Inscripción</h4>
-              <ul className="space-y-2 text-pure-white/90">
-                <li>• Las inscripciones se realizan a través del portal estudiantil</li>
-                <li>• Cupos limitados por taller</li>
-                <li>• Se requiere autorización de apoderado para menores de edad</li>
-                <li>• Confirmación de inscripción en 48 horas</li>
-              </ul>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="bg-pure-white/10 backdrop-blur-sm rounded-lg p-6"
-            >
-              <h4 className="text-lg font-semibold text-soft-white mb-4">Beneficios</h4>
-              <ul className="space-y-2 text-pure-white/90">
-                <li>• Desarrollo de habilidades extracurriculares</li>
-                <li>• Certificación al finalizar el taller</li>
-                <li>• Participación en competencias y eventos</li>
-                <li>• Networking con otros estudiantes</li>
-              </ul>
-            </motion.div>
+          <div className="bg-gradient-diagonal rounded-lg p-6 text-pure-white shadow-lg">
+            <h3 className="text-2xl font-semibold text-center mb-4">Campeonatos Ganados</h3>
+            <ul className="max-w-2xl mx-auto text-center">
+              <li className="mb-2">2do Lugar JDE Comunal Año 2024 – Voleibol Varones Sub17</li>
+            </ul>
           </div>
         </motion.div>
       </div>

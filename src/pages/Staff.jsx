@@ -5,87 +5,32 @@ import GlassCard from "../components/GlassCard";
 const Staff = () => {
   const staffCategories = [
     {
-      title: "Dirección",
+      title: "Directiva",
       icon: "👔",
       members: [
-        {
-          name: "Lic. María González",
-          position: "Directora",
-          description: "Licenciada en Educación con más de 20 años de experiencia en gestión educativa.",
-          email: "directora@liceosalle.cl"
-        }
+        { name: "Eric Cabrera", position: "Director", email: "direccion@liceosalle.cl" }
       ]
     },
     {
-      title: "Equipo Docente",
+      title: "Profesores",
       icon: "👨‍🏫",
       members: [
-        {
-          name: "Prof. Guadalupe Castillo",
-          position: "Profesora de Especialidad Programación",
-          description: "por definir",
-          email: "por definir"
-        },
-        {
-          name: "Prof. Juan Pablo Gonzáles",
-          position: "Profesor de Educacion Física",
-          description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
-          email: "por definir"
-        },
-        {
-          name: "Prof. Sergio Bernal",
-          position: "Profesor de Educación Física",
-          description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
-          email: "por definir"
-        },
-        {
-          name: "Prof. Julian Salas",
-          position: "Profesor de Educacion Física",
-          description: "Entrenador certificado con experiencia en desarrollo deportivo estudiantil.",
-          email: "por definir"
-        },
-        {
-          name: "Prof. Daniel Michea ",
-          position: "Profesor de Lenguaje y Comunicación",
-          description: "por definir",
-          email: "por definir"
-        },
-        {
-          name: "Prof. Christian Labra",
-          position: "Profesor de Especialidad Administración",
-          description: "por definir",
-          email: "por definir"
-        },
+        { name: "Guadalupe Castillo", position: "Profesora de Especialidad Programación" },
+        { name: "Juan Pablo Gonzáles", position: "Profesor de Educación Física" },
+        { name: "Natalia Contreras", position: "Profesora de Matemáticas" },
+        { name: "Daniel Michea", position: "Profesor de Lenguaje" },
+        { name: "Sergio Bernal", position: "Profesor de Educación Física" },
+        { name: "Julian Salas", position: "Profesor de Educación Física" },
+        { name: "Raúl", position: "Profesor de Matemáticas" },
+        { name: "Cindy Lopez", position: "Profesora de Especialidad Administración" },
+        { name: "Christian Labra", position: "Profesor de Especialidad Administración" }
       ]
     },
     {
-      title: "Administración",
-      icon: "👩‍💼",
+      title: "Inspectoría",
+      icon: "🛡️",
       members: [
-        {
-          name: "Lic. Pedro Hernández",
-          position: "Secretario Académico",
-          description: "Encargado de la gestión administrativa y coordinación académica.",
-          email: "secretaria@liceosalle.cl"
-        },
-        {
-          name: "Srta. Carmen Díaz",
-          position: "Asistente Administrativa",
-          description: "Apoyo administrativo y atención a estudiantes y apoderados.",
-          email: "administracion@liceosalle.cl"
-        }
-      ]
-    },
-    {
-      title: "Orientación",
-      icon: "🧑‍🎓",
-      members: [
-        {
-          name: "Ps. Isabel Torres",
-          position: "Orientadora Educacional",
-          description: "Especialista en psicología educativa y orientación vocacional.",
-          email: "orientacion@liceosalle.cl"
-        }
+        { name: "María Teresa", position: "Inspectora General" }
       ]
     }
   ];

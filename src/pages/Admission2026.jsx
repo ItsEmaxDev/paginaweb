@@ -186,14 +186,6 @@ const Admission2026 = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Seleccionar curso</option>
-                    <option value="prekinder">Pre-Kínder</option>
-                    <option value="kinder">Kínder</option>
-                    <option value="1basico">1° Básico</option>
-                    <option value="2basico">2° Básico</option>
-                    <option value="3basico">3° Básico</option>
-                    <option value="4basico">4° Básico</option>
-                    <option value="5basico">5° Básico</option>
-                    <option value="6basico">6° Básico</option>
                     <option value="7basico">7° Básico</option>
                     <option value="8basico">8° Básico</option>
                     <option value="1medio">1° Medio</option>

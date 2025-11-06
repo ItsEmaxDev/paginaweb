@@ -39,15 +39,14 @@ const Home = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link to="#quienes-somos">
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 212, 74, 0.5)" }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-golden-yellow text-primary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-500 hover:bg-pure-white hover:text-primary shadow-lg"
-              >
-                Explorar Más
-              </motion.button>
-            </Link>
+            <motion.button
+              onClick={() => document.getElementById('quienes-somos').scrollIntoView({ behavior: 'smooth' })}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 212, 74, 0.5)" }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-golden-yellow text-primary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-500 hover:bg-pure-white hover:text-primary shadow-lg"
+            >
+              Explorar Más
+            </motion.button>
           </motion.div>
         </div>
       </section>
@@ -118,14 +117,15 @@ const Home = () => {
 
       {/* Preview Sections */}
       <PreviewSection
-        title="Últimas Noticias"
+        title="Últimas Novedades"
         description="Mantente al día con las últimas noticias, eventos y logros de nuestra comunidad educativa."
         icon="📰"
         linkTo="/noticias"
         previewItems={[
-          { icon: "📚", title: "Nueva Biblioteca Digital", description: "Hemos inaugurado nuestra nueva biblioteca digital con acceso a miles de recursos educativos." },
           { icon: "⚽", title: "Campeonato de Fútbol", description: "Nuestros estudiantes se preparan para el campeonato regional de fútbol escolar." },
           { icon: "💻", title: "Taller de Programación", description: "Nuevo taller de introducción a la programación para estudiantes de secundaria." },
+          { icon: "🏐", title: "Nuevo Taller de Voleibol Sub14", description: "Nuevo taller de voleibol para estudiantes de sub14, fomentando el deporte y el trabajo en equipo." },
+          { icon: "🌟", title: "Curso Destacado 4to Medio D", description: "por su participación en la creación de la página web para el liceo." },
         ]}
       />
 

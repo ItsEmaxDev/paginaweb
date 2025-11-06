@@ -8,7 +8,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-reverse text-pure-white py-8"
+      className="bg-gradient-reverse text-pure-white py-4"
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -56,7 +56,7 @@ const Footer = () => {
           transition={{ delay: 0.8 }}
           className="border-t border-pure-white/20 mt-8 pt-4 text-center text-sm"
         >
-          <p className="text-sm font-bold" style={{ color: '#ffffffff' }}>&copy; 2025 Mi Salle + | Diseñado por Emnlk</p>
+          <p className="text-sm font-bold" style={{ color: '#ffffffff' }}>&copy; 2025 Mi Salle + | Diseñado por Dev4D Studios</p>
         </motion.div>
       </div>
     </motion.footer>

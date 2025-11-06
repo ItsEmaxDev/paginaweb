@@ -1,26 +1,22 @@
-# TODO: Redesign Home Page and Create Subpages with Liquid Glass Design
+# TODO List for Home Page Updates
 
-## Completed Tasks
-- [x] Analyze existing files and create plan
-- [x] Get user confirmation for plan
-- [x] Update tailwind.config.js: Add glass-related utilities (backdrop-blur variants, glass shadows, floating keyframes)
+## Home.jsx Changes
+- [x] Change "Últimas Noticias" to "Últimas Novedades"
+- [x] Remove "Nueva Biblioteca Digital" item
+- [x] Add "Nuevo Taller de Voleibol Sub14" item
+- [x] Add "Curso Destacado 4to Medio D por su participación en la creación de la página web para el liceo." item
+- [x] Update "Explorar más" button to scroll smoothly to "#quienes-somos"
 
-## Pending Tasks
-- [x] Create src/components/GlassCard.jsx: Reusable glass card component
-- [x] Create src/components/PreviewSection.jsx: Reusable preview section component
-- [x] Redesign src/pages/Home.jsx: Hero with background image, "Quiénes Somos" section, preview cards for new sections
-- [x] Create src/pages/News.jsx: Full Supabase news list page
-- [x] Create src/pages/Staff.jsx: Static team info page
-- [x] Create src/pages/Admission2026.jsx: Info + form page
-- [x] Create src/pages/Regulations.jsx: PDF/text embed page
-- [x] Update src/App.jsx: Separate routes for subpages
-- [x] Update src/components/Header.jsx: Change navigation to Link components
-- [x] Add subtle parallax/floating animations for glass effect
-- [x] Ensure WCAG contrast, responsiveness, image optimization
+## Header.jsx Changes
+- [x] Implement functional hamburger menu for mobile with links: Calendario, Logros, Talleres, Contacto
+- [x] Remove "Inicio" from navigation
+- [x] Make logo link to "/" (home)
+- [x] Add scroll effect to shrink header height and logo size
+
+## Footer.jsx Changes
+- [x] Reduce footer padding to make it smaller
+- [x] Change "Diseñado por Emnlk" to "Diseñado por Dev4D Studios"
 
 ## Followup Steps
-- [ ] Test routing and navigation
-- [ ] Verify Supabase integration for News page
-- [ ] Check responsiveness, accessibility, contrast compliance
-- [ ] Optimize images with lazy loading
-- [ ] Commit changes and deploy to Vercel
+- [ ] Test responsiveness
+- [ ] Commit changes to GitHub for redeployment
